@@ -235,8 +235,26 @@
   }
 
   .nav-links {
-    top: 76px;
-    width: calc(100% - 24px);
+    position: fixed !important;
+    top: 50vh !important; 
+    left: 50vw !important;
+    transform: translate(-50%, -50%) !important;
+    
+    width: 85vw !important;
+    height: fit-content !important;
+    max-height: 70vh !important;
+    
+    background: var(--color-menu-bg) !important;
+    border: 1px solid var(--color-nav-border) !important;
+    border-radius: 24px !important;
+    padding: 30px 20px !important;
+    
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 20px !important;
+    z-index: 9999 !important;
   }
 
   .nav-cta {
